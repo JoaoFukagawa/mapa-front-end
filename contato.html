@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com João Silva para orçamentos, parcerias ou dúvidas sobre desenvolvimento web.">
+    <meta name="keywords" content="contato, desenvolvedor, orçamento, site, web">
+    <meta name="author" content="João Silva">
+    <title>Contato - João Silva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128187;</text></svg>">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">&lt;JoãoDev /&gt;</a>
+                <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="fade-in">Entre em Contato</h1>
+                <p class="fade-in">Tem um projeto em mente? Vamos conversar!</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-wrapper fade-in">
+                    <div class="contact-info">
+                        <h2>Informações de Contato</h2>
+                        <p><strong>Email:</strong> joao.silva@email.com</p>
+                        <p><strong>Telefone:</strong> (11) 99999-8888</p>
+                        <p><strong>Localização:</strong> São Paulo, SP</p>
+                        <p><strong>Disponibilidade:</strong> Seg a Sex, 9h - 18h</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <h2>Envie uma Mensagem</h2>
+
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-8888">
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="orcamento">Orçamento</option>
+                                <option value="parceria">Parceria</option>
+                                <option value="suporte">Suporte</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva seu projeto ou dúvida..." required></textarea>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 João Silva. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">&#128279;</a>
+                <a href="#" aria-label="LinkedIn">&#128279;</a>
+                <a href="#" aria-label="Instagram">&#128279;</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTop" title="Voltar ao topo">&#8593;</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório Técnico - MAPA Front-End</title>
+    <style>
+        body { font-family: 'Times New Roman', Times, serif; font-size: 12pt; line-height: 1.5; text-align: justify; margin: 40px; }
+        h1 { font-size: 18pt; text-align: center; margin-bottom: 30px; }
+        h2 { font-size: 14pt; margin-top: 30px; margin-bottom: 15px; }
+        h3 { font-size: 12pt; margin-top: 20px; }
+        p { margin-bottom: 10px; }
+        ul { margin-bottom: 10px; }
+        .center { text-align: center; }
+        .bold { font-weight: bold; }
+        hr { margin: 30px 0; }
+    </style>
+</head>
+<body>
+
+<h1>RELATÓRIO TÉCNICO – DESENVOLVIMENTO FRONT-END</h1>
+
+<hr>
+
+<h2>1. Introdução</h2>
+
+<p>O presente projeto foi desenvolvido como parte da atividade MAPA da disciplina de Programação Front-End da Unicesumar. O objetivo foi criar um website completo e responsivo utilizando HTML5, CSS3 e JavaScript/jQuery, aplicando os conceitos estudados ao longo da disciplina.</p>
+
+<p>O tema escolhido foi um <strong>portfólio pessoal</strong> de um desenvolvedor front-end fictício chamado João Silva. A escolha do tema se deve à sua versatilidade, pois permite demonstrar habilidades técnicas, organização de projetos, e oferece uma experiência de navegação completa com múltiplas páginas e interatividade.</p>
+
+<hr>
+
+<h2>2. Arquitetura do Site</h2>
+
+<h3>Quantidade de Páginas</h3>
+<p>O site é composto por <strong>4 páginas</strong> interligadas:</p>
+<ul>
+    <li><strong>index.html</strong> (Página Inicial) – Apresentação com seção hero, habilidades e chamada para ação.</li>
+    <li><strong>sobre.html</strong> (Sobre) – Biografia do desenvolvedor, habilidades técnicas com barras de progresso animadas e linha do tempo da trajetória profissional.</li>
+    <li><strong>projetos.html</strong> (Projetos) – Portfólio visual com cards de projetos e sistema de filtro por categoria.</li>
+    <li><strong>contato.html</strong> (Contato) – Formulário de contato com validação via JavaScript e informações de contato.</li>
+</ul>
+
+<h3>Navegação</h3>
+<p>A navegação entre as páginas é feita por meio de um menu fixo no topo (navbar), presente em todas as páginas. O menu destaca a página ativa com um indicador visual (sublinhado animado). Em dispositivos móveis, o menu se transforma em um menu hamburguer com animação de slide lateral.</p>
+
+<h3>Layout</h3>
+<p>O layout foi organizado utilizando conceitos de <strong>Flexbox</strong> e <strong>CSS Grid</strong>, garantindo uma distribuição equilibrada dos elementos. Cada página segue uma estrutura semântica com as tags &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt; e &lt;footer&gt;, promovendo acessibilidade e SEO.</p>
+
+<hr>
+
+<h2>3. Tecnologias Utilizadas</h2>
+
+<h3>HTML5</h3>
+<p>Utilizado para estruturar todo o conteúdo do site com tags semânticas (header, nav, main, section, footer), meta tags para SEO e caráter responsivo, e formulário com campos tipados (email, tel, select, textarea).</p>
+
+<h3>CSS3</h3>
+<p>Responsável pela estilização completa do site, incluindo:</p>
+<ul>
+    <li>Design moderno com paleta de cores roxa (#6c63ff) e tons neutros.</li>
+    <li>Layout responsivo com media queries para tablets (768px) e celulares (480px).</li>
+    <li>Animações CSS (transitions, keyframes para hover e fade-in).</li>
+    <li>Variáveis CSS (:root) para padronização de cores e espaçamentos.</li>
+    <li>Scrollbar personalizada e botão de voltar ao topo.</li>
+</ul>
+
+<h3>JavaScript / jQuery</h3>
+<p>Foram implementados os seguintes recursos interativos com jQuery e JavaScript puro:</p>
+<ul>
+    <li><strong>Menu mobile:</strong> toggle do menu hamburguer com animação de slide.</li>
+    <li><strong>Scroll to top:</strong> botão flutuante que aparece ao rolar a página.</li>
+    <li><strong>Fade-in na rolagem:</strong> elementos surgem suavemente conforme o usuário scrolla.</li>
+    <li><strong>Barras de progresso animadas:</strong> animação dispara quando a seção entra na viewport.</li>
+    <li><strong>Filtro de projetos:</strong> exibição/ocultação de cards com fading.</li>
+    <li><strong>Validação de formulário:</strong> verificação de campos obrigatórios, formato de email e telefone com feedback visual.</li>
+    <li><strong>Efeito hover nos cards:</strong> elevação suave ao passar o mouse.</li>
+</ul>
+
+<hr>
+
+<h2>4. Recursos Implementados</h2>
+
+<h3>Menu de Navegação</h3>
+<p>Menu fixo no topo com links para todas as páginas. Em resoluções menores, o menu se transforma em um ícone hamburguer que abre um menu lateral com overlay. O link da página atual recebe destaque visual automático.</p>
+
+<h3>Responsividade</h3>
+<p>O layout foi projetado mobile-first, adaptando-se perfeitamente a diferentes tamanhos de tela através de media queries. As grid layouts se reorganizam (de 4 colunas para 2 e depois 1), os textos ajustam tamanhos, e o menu se adapta para dispositivos touch.</p>
+
+<h3>Formulário com Validação</h3>
+<p>O formulário de contato valida todos os campos via jQuery antes do envio simulado. São verificados: nome (obrigatório, mínimo 3 caracteres), e-mail (obrigatório, formato válido), telefone (formato opcional, mas validado se preenchido), assunto (seleção obrigatória) e mensagem (obrigatória, mínimo 10 caracteres). Campos inválidos recebem borda vermelha e mensagem de erro.</p>
+
+<h3>Recursos Interativos (jQuery)</h3>
+<p>Dois efeitos interativos principais com jQuery:</p>
+<ul>
+    <li><strong>Filtro de Projetos:</strong> o usuário pode filtrar os projetos por categoria (Sites, Landing Pages, Aplicações) com animação fadeIn/fadeOut.</li>
+    <li><strong>Animação de Barras de Habilidade:</strong> as barras de progresso na página "Sobre" são preenchidas automaticamente quando o usuário rola até a seção.</li>
+</ul>
+
+<h3>SEO Básico</h3>
+<p>Foram aplicadas diversas práticas de SEO:</p>
+<ul>
+    <li>Meta tags description, keywords e author em todas as páginas.</li>
+    <li>Open Graph (og:title, og:description, og:type) para compartilhamento em redes sociais.</li>
+    <li>Tags semânticas HTML5 para melhor interpretação por crawlers.</li>
+    <li>Atributos aria-label para acessibilidade.</li>
+    <li>Hierarquia correta de headings (h1, h2, h3).</li>
+    <li>Favicon personalizado.</li>
+</ul>
+
+<hr>
+
+<h2>5. Desafios e Soluções</h2>
+
+<h3>Dificuldades Encontradas</h3>
+<ul>
+    <li><strong>Menu responsivo:</strong> implementar um menu hamburguer funcional que funcionasse bem em mobile sem quebrar o layout em desktop foi desafiador. A solução foi usar JavaScript para controlar classes CSS que alternam entre os estados.</li>
+    <li><strong>Animação ao scroll:</strong> fazer com que os elementos aparecessem suavemente ao rolar a página exigiu calcular corretamente as posições dos elementos em relação à viewport.</li>
+    <li><strong>Validação de formulário:</strong> criar validações robustas com feedback visual claro para o usuário demandou atenção aos detalhes e testes de diferentes cenários.</li>
+    <li><strong>Filtro de projetos:</strong> sincronizar a animação de fade com a reorganização dos cards no grid foi um desafio de timing.</li>
+</ul>
+
+<h3>Soluções Adotadas</h3>
+<ul>
+    <li>Para o menu, foi utilizado jQuery para controlar o toggle de classe e animar o slide lateral com CSS transitions.</li>
+    <li>Para as animações de scroll, foi implementada uma função que verifica a posição de cada elemento e adiciona a classe "visible" quando apropriado.</li>
+    <li>Para o formulário, cada campo foi validado individualmente com expressões regulares e feedback visual via classes CSS (error/success).</li>
+    <li>Para o filtro, foi usado o método fadeIn() do jQuery com duração controlada para um efeito suave.</li>
+</ul>
+
+<hr>
+
+<h2>6. Resultados Obtidos (Capturas de Tela)</h2>
+
+<p><strong>Observação:</strong> As imagens devem ser inseridas aqui conforme solicitado no template. As capturas de tela do site podem ser obtidas abrindo cada página no navegador e utilizando a ferramenta de print da tela (PrtSc ou Snipping Tool).</p>
+
+<ul>
+    <li><strong>Página Inicial:</strong> Captura da home com seção hero, cards de habilidades e CTA.</li>
+    <li><strong>Página Sobre:</strong> Captura mostrando a biografia, barras de habilidade animadas e linha do tempo.</li>
+    <li><strong>Página Projetos:</strong> Captura exibindo os cards de projetos e os botões de filtro.</li>
+    <li><strong>Página Contato:</strong> Captura do formulário de contato com validação e informações.</li>
+    <li><strong>Responsividade:</strong> Captura em viewport mobile mostrando o menu hamburguer ativo.</li>
+    <li><strong>Validação:</strong> Captura do formulário exibindo mensagens de erro nos campos.</li>
+</ul>
+
+<hr>
+
+<h2>7. Considerações Finais</h2>
+
+<h3>Aprendizados</h3>
+<p>O desenvolvimento deste projeto permitiu aplicar na prática os conceitos fundamentais de programação front-end. Foi possível compreender como HTML, CSS e JavaScript trabalham em conjunto para criar uma experiência web completa. Especialmente relevante foi o aprendizado sobre:</p>
+<ul>
+    <li>A importância do design responsivo e como implementá-lo com media queries.</li>
+    <li>Como o jQuery simplifica a manipulação do DOM e a criação de efeitos interativos.</li>
+    <li>Técnicas de validação de formulários no lado do cliente.</li>
+    <li>Boas práticas de SEO e acessibilidade.</li>
+    <li>Organização de código e separação de responsabilidades (HTML, CSS, JS).</li>
+</ul>
+
+<h3>Melhorias Futuras</h3>
+<p>Caso o projeto fosse continuado, as seguintes melhorias poderiam ser implementadas:</p>
+<ul>
+    <li>Integração com back-end para envio real de formulários via PHP ou Node.js.</li>
+    <li>Animações mais complexas com CSS Keyframes ou bibliotecas como AOS.js.</li>
+    <li>Modo escuro (dark mode) com toggle via JavaScript.</li>
+    <li>Integração com CMS para gerenciamento dinâmico dos projetos.</li>
+    <li>Otimização de performance com lazy loading de imagens.</li>
+    <li>Testes de compatibilidade cross-browser mais abrangentes.</li>
+</ul>
+
+<hr>
+
+<h2>8. Referências</h2>
+
+<p>NOEL, André Abdala. <strong>Programação Front End</strong>. Florianópolis, SC: Arqué, 2025. 232 p.</p>
+
+<p>TOKUMOTO, Ronie Cesar. <strong>Programação Front End</strong>. Maringá-PR: Unicesumar, 2018.</p>
+
+<p>SILVA, Maurício Samy. <strong>HTML5 – A linguagem de marcação que revolucionou a web</strong>. São Paulo: Novatec, 2021.</p>
+
+<p>MDN Web Docs. <strong>Front-end web developer</strong>. Disponível em: https://developer.mozilla.org/pt-BR/docs/Learn/Front-end_web_developer. Acesso em: 8 abr. 2024.</p>
+
+<p>W3Schools. <strong>HTML Tutorial</strong>. Disponível em: https://www.w3schools.com/html/. Acesso em: 8 abr. 2024.</p>
+
+<p>W3Schools. <strong>CSS Tutorial</strong>. Disponível em: https://www.w3schools.com/css/. Acesso em: 8 abr. 2024.</p>
+
+<p>jQuery Foundation. <strong>jQuery API Documentation</strong>. Disponível em: https://api.jquery.com/. Acesso em: 8 abr. 2024.</p>
+
+</body>
+</html>

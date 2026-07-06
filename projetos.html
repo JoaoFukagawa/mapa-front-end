@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veja os projetos desenvolvidos por João Silva, incluindo sites, landing pages e aplicações web.">
+    <meta name="keywords" content="projetos, portfólio, sites, web, desenvolvimento">
+    <meta name="author" content="João Silva">
+    <title>Projetos - João Silva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128187;</text></svg>">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">&lt;JoãoDev /&gt;</a>
+                <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html" class="active">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="fade-in">Meus Projetos</h1>
+                <p class="fade-in">Confira alguns dos trabalhos que desenvolvi.</p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="filter-buttons fade-in">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="sites">Sites</button>
+                    <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                    <button class="filter-btn" data-filter="aplicacoes">Aplicações</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card fade-in" data-category="sites">
+                        <div class="project-img">&#127760;</div>
+                        <div class="project-info">
+                            <h3>Site Institucional</h3>
+                            <p>Site completo para uma clínica médica com agendamento online.</p>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in" data-category="landing">
+                        <div class="project-img">&#127970;</div>
+                        <div class="project-info">
+                            <h3>Landing Page - Startup</h3>
+                            <p>Página de apresentação para uma startup de tecnologia.</p>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">jQuery</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in" data-category="aplicacoes">
+                        <div class="project-img">&#128200;</div>
+                        <div class="project-info">
+                            <h3>App de Tarefas</h3>
+                            <p>Aplicativo web para gerenciamento de tarefas com armazenamento local.</p>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in" data-category="sites">
+                        <div class="project-img">&#127963;</div>
+                        <div class="project-info">
+                            <h3>Blog Pessoal</h3>
+                            <p>Blog com artigos sobre tecnologia e desenvolvimento web.</p>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in" data-category="landing">
+                        <div class="project-img">&#127917;</div>
+                        <div class="project-info">
+                            <h3>Landing Page - Ebook</h3>
+                            <p>Página de vendas para um ebook sobre programação.</p>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">jQuery</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in" data-category="aplicacoes">
+                        <div class="project-img">&#127744;</div>
+                        <div class="project-info">
+                            <h3>Previsão do Tempo</h3>
+                            <p>Aplicação que consome API para exibir dados climáticos em tempo real.</p>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 João Silva. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">&#128279;</a>
+                <a href="#" aria-label="LinkedIn">&#128279;</a>
+                <a href="#" aria-label="Instagram">&#128279;</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTop" title="Voltar ao topo">&#8593;</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
